@@ -1,0 +1,49 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Warna latar belakang */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Memastikan body setidaknya setinggi viewport */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #066edd; /* Warna latar belakang navbar */
+    margin-bottom: 20px; /* Memberikan jarak di bawah navbar */
+    padding: 10px; /* Menambahkan padding untuk navbar */
+}
+
+.navbar-brand {
+    font-size: 1.5em; /* Ukuran font untuk brand */
+    color: white; /* Warna teks untuk brand */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1em; /* Ukuran font untuk tautan */
+    color: white; /* Warna teks untuk tautan */
+}
+
+/* Hero section styling */
+.jumbotron {
+    background-color: transparent; /* Menghilangkan warna latar belakang jumbotron */
+    color: black; /* Warna teks untuk jumbotron */
+    text-align: center; /* Memusatkan teks */
+    padding: 40px 20px; /* Padding untuk jumbotron */
+    flex: 1; /* Memungkinkan jumbotron untuk mengambil ruang yang tersisa */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff; /* Warna latar belakang footer */
+    color: white; /* Warna teks footer */
+}

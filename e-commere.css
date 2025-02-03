@@ -1,0 +1,88 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px; /* Mengurangi padding vertikal dan horizontal */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Memisahkan brand dan nav */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+}
+
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em; /* Ukuran font untuk brand */
+}
+
+/* Navbar items */
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0; /* Menghapus margin default */
+    margin-left: auto; /* Memindahkan navbar ke kanan */
+}
+
+.navbar-nav li {
+    margin-left: 10px; /* Jarak antar item */
+}
+
+.navbar-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px; /* Menambahkan padding untuk tautan */
+}
+
+/* Hero section styling */
+div {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Video section styling */
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+video {
+    max-width: 100%; /* Memastikan video responsif */
+    height: auto; /* Menjaga rasio aspek video */
+    border-radius: 5px; /* Menambahkan sudut melengkung */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="e-commere.html">E-Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">Products</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <div class="container">
+        <h2 class="text-center mt-4">Your Shopping</h2>
+        <div class="row" id="cart-items">
+            <!-- Produk akan ditambahkan di sini -->
+        </div>
+        <div id="empty-cart-message" class="text-center mt-4" style="display: none;">
+            <h5>Your cart is empty.</h5>
+        </div>
+        <div class="text-center mt-4">
+            <a href="product.html" class="btn btn-primary">Shop Now</a>
+        </div>
+    </div>
+
+    <footer class="text-center mt-4">
+        <p>&copy; 2023 E-Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Menunggu hingga dokumen sepenuhnya dimuat
+        document.addEventListener("DOMContentLoaded", function() {
+            // Mendapatkan keranjang dari localStorage
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartItemsContainer = document.getElementById('cart-items');
+            const emptyCartMessage = document.getElementById('empty-cart-message');
+
+            // Menampilkan produk di keranjang
+            if (cart.length > 0) {
+                cart.forEach((product, index) => {
+                    const productCard = `
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <img src="${product.image}" class="card-img-top" alt="${product.title}">
+                                <div class="card-body">
+                                    <h5 class="card-title">${product.title}</h5>
+                                    <p class="card-text">${product.price}</p>
+                                    <button class="btn btn-danger btn-remove" data-index="${index}">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    cartItemsContainer.innerHTML += productCard;
+                });
+            } else {
+                // Tampilkan pesan jika keranjang kosong
+                emptyCartMessage.style.display = 'block';
+            }
+
+            // Menangani klik pada tombol "Remove"
+            const removeButtons = document.querySelectorAll('.btn-remove');
+            removeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const index = this.getAttribute('data-index');
+                    cart.splice(index, 1); // Menghapus produk dari array
+                    localStorage.setItem('cart', JSON.stringify(cart)); // Memperbarui localStorage
+                    location.reload(); // Memuat ulang halaman untuk memperbarui tampilan
+                });
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.

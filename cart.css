@@ -1,0 +1,59 @@
+/* Reset some default styles */
+body, h1, h2, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+html, body {
+    height: 100%; /* Memastikan body dan html setinggi 100% */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Warna latar belakang */
+    display: flex; /* Menggunakan Flexbox */
+    flex-direction: column; /* Mengatur arah kolom */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #066edd; /* Warna latar belakang navbar */
+    margin-bottom: 20px; /* Memberikan jarak di bawah navbar */
+    padding: 10px; /* Menambahkan padding untuk navbar */
+}
+
+.navbar-brand {
+    font-size: 1.5em; /* Ukuran font untuk brand */
+    color: white; /* Warna teks untuk brand */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1em; /* Ukuran font untuk tautan */
+    color: white; /* Warna teks untuk tautan */
+}
+
+/* Cart Section */
+.container {
+    margin-top: 20px; /* Memberikan jarak di atas konten */
+    flex: 1; /* Memungkinkan konten untuk mengambil ruang yang tersisa */
+}
+
+.card {
+    margin-bottom: 20px; /* Memberikan jarak di bawah setiap kartu */
+}
+
+/* Styling untuk pesan keranjang kosong */
+#empty-cart-message {
+    color: #dc3545; /* Warna merah untuk pesan */
+    font-size: 1.2em; /* Ukuran font untuk pesan */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff; /* Warna latar belakang footer */
+    color: white; /* Warna teks footer */
+}

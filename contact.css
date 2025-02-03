@@ -1,0 +1,67 @@
+/* Reset some default styles */
+body, h1, h2, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Warna latar belakang */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #066edd; /* Warna latar belakang navbar */
+}
+
+.navbar-brand {
+    font-size: 1.5em; /* Ukuran font untuk brand */
+    color: white; /* Warna teks untuk brand */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1em; /* Ukuran font untuk tautan */
+    color: white; /* Warna teks untuk tautan */
+}
+
+/* Contact Section */
+.container {
+    margin-top: 20px; /* Memberikan jarak di atas konten */
+    max-width: 500px; /* Lebar maksimum kontainer */
+    margin-left: auto; /* Memusatkan kontainer */
+    margin-right: auto; /* Memusatkan kontainer */
+}
+
+h2 {
+    margin-bottom: 20px; /* Memberikan jarak di bawah judul */
+    text-align: center; /* Memusatkan judul */
+}
+
+/* Form styling */
+.form-control {
+    border-radius: 0; /* Menghapus sudut melengkung */
+}
+
+textarea {
+    max-width: 100%; /* Memastikan textarea tidak lebih lebar dari kontainer */
+    height: 100px; /* Mengatur tinggi textarea */
+}
+
+.btn-primary {
+    background-color: #066edd; /* Warna latar belakang tombol */
+    border: none; /* Menghapus border */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Warna latar belakang saat hover */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff; /* Warna latar belakang footer */
+    color: white; /* Warna teks footer */
+}

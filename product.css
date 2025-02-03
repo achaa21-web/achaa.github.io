@@ -1,0 +1,86 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Warna latar belakang */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #066edd; /* Warna latar belakang navbar */
+    margin-bottom: 20px; /* Memberikan jarak di bawah navbar */
+    padding: 10px; /* Menambahkan padding untuk navbar */
+}
+
+.navbar-brand {
+    font-size: 1.5em; /* Ukuran font untuk brand */
+    color: white; /* Warna teks untuk brand */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1em; /* Ukuran font untuk tautan */
+    color: white; /* Warna teks untuk tautan */
+}
+
+/* Hero section styling */
+.jumbotron {
+    background-color: transparent; /* Menghilangkan warna latar belakang jumbotron */
+    color: black; /* Warna teks untuk jumbotron */
+    text-align: center; /* Memusatkan teks */
+    padding: 40px 20px; /* Padding untuk jumbotron */
+}
+
+/* Content Section */
+.container {
+    margin-top: 20px; /* Memberikan jarak di atas konten */
+}
+
+.card {
+    margin-bottom: 20px; /* Memberikan jarak di bawah setiap kartu */
+}
+
+/* Memusatkan konten dalam kartu */
+.card-body {
+    display: flex;
+    flex-direction: column; /* Mengatur arah kolom */
+    align-items: center; /* Memusatkan item secara horizontal */
+}
+
+.card-title {
+    font-size: 1.25em; /* Ukuran font untuk judul produk */
+}
+
+.card-text {
+    font-size: 1.1em; /* Ukuran font untuk harga produk */
+}
+
+/* Styling untuk tombol "Add to Cart" */
+.btn-add-to-cart {
+    margin-top: 15px; /* Memberikan jarak di atas tombol */
+    background-color: #28a745; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border */
+    padding: 10px 20px; /* Padding untuk tombol */
+    font-size: 1em; /* Ukuran font untuk tombol */
+    text-align: center; /* Memusatkan teks dalam tombol */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    transition: background-color 0.3s; /* Efek transisi untuk hover */
+}
+
+.btn-add-to-cart:hover {
+    background-color: #218838; /* Warna latar belakang saat hover */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff; /* Warna latar belakang footer */
+    color: white; /* Warna teks footer */
+}
